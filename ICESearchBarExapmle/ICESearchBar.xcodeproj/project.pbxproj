@@ -11,9 +11,9 @@
 		17C63ACF1D17D14000A387A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C63ACE1D17D14000A387A9 /* AppDelegate.m */; };
 		17C63AD11D17D14000A387A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17C63AD01D17D14000A387A9 /* Assets.xcassets */; };
 		17C63AD41D17D14000A387A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17C63AD21D17D14000A387A9 /* LaunchScreen.storyboard */; };
-		17C63ADD1D17D16500A387A9 /* ICESearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C63ADC1D17D16500A387A9 /* ICESearchBar.m */; };
 		17C63AE31D17D1B000A387A9 /* ICEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C63AE21D17D1B000A387A9 /* ICEViewController.m */; };
-		17C63AEF1D17D54300A387A9 /* ICESearchBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17C63AEE1D17D54300A387A9 /* ICESearchBar.podspec */; };
+		17C63AF61D17D90600A387A9 /* ICESearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C63AF51D17D90600A387A9 /* ICESearchBar.m */; };
+		17C63AF81D17DB6700A387A9 /* ICESearchBar.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17C63AF71D17DB6700A387A9 /* ICESearchBar.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +24,11 @@
 		17C63AD01D17D14000A387A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17C63AD31D17D14000A387A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17C63AD51D17D14000A387A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17C63ADB1D17D16500A387A9 /* ICESearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICESearchBar.h; sourceTree = "<group>"; };
-		17C63ADC1D17D16500A387A9 /* ICESearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICESearchBar.m; sourceTree = "<group>"; };
 		17C63AE11D17D1B000A387A9 /* ICEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICEViewController.h; sourceTree = "<group>"; };
 		17C63AE21D17D1B000A387A9 /* ICEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICEViewController.m; sourceTree = "<group>"; };
-		17C63AEE1D17D54300A387A9 /* ICESearchBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ICESearchBar.podspec; sourceTree = "<group>"; };
+		17C63AF41D17D90600A387A9 /* ICESearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICESearchBar.h; sourceTree = "<group>"; };
+		17C63AF51D17D90600A387A9 /* ICESearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICESearchBar.m; sourceTree = "<group>"; };
+		17C63AF71D17DB6700A387A9 /* ICESearchBar.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ICESearchBar.podspec; path = ../ICESearchBar.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,8 @@
 		17C63ABE1D17D14000A387A9 = {
 			isa = PBXGroup;
 			children = (
-				17C63AEE1D17D54300A387A9 /* ICESearchBar.podspec */,
+				17C63AF71D17DB6700A387A9 /* ICESearchBar.podspec */,
+				17C63AF31D17D90600A387A9 /* ICESearchBar */,
 				17C63AC91D17D14000A387A9 /* ICESearchBar */,
 				17C63AC81D17D14000A387A9 /* Products */,
 			);
@@ -66,8 +67,6 @@
 				17C63ACE1D17D14000A387A9 /* AppDelegate.m */,
 				17C63AE11D17D1B000A387A9 /* ICEViewController.h */,
 				17C63AE21D17D1B000A387A9 /* ICEViewController.m */,
-				17C63ADB1D17D16500A387A9 /* ICESearchBar.h */,
-				17C63ADC1D17D16500A387A9 /* ICESearchBar.m */,
 				17C63AD01D17D14000A387A9 /* Assets.xcassets */,
 				17C63AD21D17D14000A387A9 /* LaunchScreen.storyboard */,
 				17C63AD51D17D14000A387A9 /* Info.plist */,
@@ -82,6 +81,16 @@
 				17C63ACB1D17D14000A387A9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17C63AF31D17D90600A387A9 /* ICESearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				17C63AF41D17D90600A387A9 /* ICESearchBar.h */,
+				17C63AF51D17D90600A387A9 /* ICESearchBar.m */,
+			);
+			name = ICESearchBar;
+			path = ../ICESearchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C63AD11D17D14000A387A9 /* Assets.xcassets in Resources */,
-				17C63AEF1D17D54300A387A9 /* ICESearchBar.podspec in Resources */,
+				17C63AF81D17DB6700A387A9 /* ICESearchBar.podspec in Resources */,
 				17C63AD41D17D14000A387A9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,8 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C63ADD1D17D16500A387A9 /* ICESearchBar.m in Sources */,
 				17C63ACF1D17D14000A387A9 /* AppDelegate.m in Sources */,
+				17C63AF61D17D90600A387A9 /* ICESearchBar.m in Sources */,
 				17C63AE31D17D1B000A387A9 /* ICEViewController.m in Sources */,
 				17C63ACC1D17D14000A387A9 /* main.m in Sources */,
 			);
