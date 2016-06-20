@@ -14,7 +14,9 @@ s.source           = { :git => 'https://github.com/My-Pod/ICESearchBar.git', :ta
 
 s.ios.deployment_target = '7.0'
 
-s.source_files = 'ICESearchBar/**/*'
-
+s.source_files = 'ICESearchBar/Classes/**/*'
+s.resource_bundles = {
+   'ICECustomSearchBar' => ['ICESearchBar/Assets/*.png']
+}
 
 end

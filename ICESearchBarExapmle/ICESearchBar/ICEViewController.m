@@ -21,12 +21,21 @@
     // Do any additional setup after loading the view.
     
     ICESearchBar *bar=  [[ICESearchBar alloc] initWithFrame:CGRectMake(100, 100, 300, 40)];
-    bar.backgroundColor = [UIColor redColor];
     [self.view addSubview:bar];
-    
-    
-    
 
+    [bar beginInput:^(NSString *text) {
+        NSLog(@"begain: %@",text);
+    }];
+    
+    [bar finishInput:^(NSString *text) {
+        NSLog(@"finish : %@",text);
+    }];
+    
+    [bar updateSearchBar:^(NSString *text) {
+        NSLog(@"update : %@",text);
+    }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
