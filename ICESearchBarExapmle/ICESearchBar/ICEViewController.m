@@ -21,6 +21,7 @@
     // Do any additional setup after loading the view.
     
     ICESearchBar *bar=  [[ICESearchBar alloc] initWithFrame:CGRectMake(100, 100, 300, 40)];
+    
     [self.view addSubview:bar];
 
     [bar beginInput:^(NSString *text) {

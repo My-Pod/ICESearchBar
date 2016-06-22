@@ -65,12 +65,14 @@ CGFloat W(UIView *view){
 
     self = [super init];
     if (self) {
-        _palceholderText = placeholderText;
         [self p_initConfig];
+        _palceholderText = placeholderText;
         [self p_subviews];
     }
     return self;
 }
+
+
 
 /**
  *  初始化配置
@@ -104,7 +106,7 @@ CGFloat W(UIView *view){
     
     [_contentView addSubview:_rightBtn];
     
-    [_rightBtn addTarget:self action:@selector(textFieldChanged) forControlEvents:UIControlEventTouchUpInside];
+    [_rightBtn addTarget:self action:@selector(p_handleSearchBtnAction) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -135,6 +137,11 @@ CGFloat W(UIView *view){
     }
 }
 
+- (void)p_handleSearchBtnAction{
+    if (self.finishBlock) {
+        self.finishBlock(self.searchTF.text);
+    }
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [self.searchTF resignFirstResponder];

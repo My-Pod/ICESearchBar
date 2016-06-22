@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'ICESearchBar'
-s.version          = '0.1.0'
+s.version          = '1.0.1'
 s.summary          = '自定义searchBar'
 s.description      = <<-DESC
 TODO: This is a simple custom SearchBar.
@@ -18,5 +18,7 @@ s.source_files = 'ICESearchBar/Classes/**/*'
 s.resource_bundles = {
    'ICECustomSearchBar' => ['ICESearchBar/Assets/*.png']
 }
+
+
 
 end
